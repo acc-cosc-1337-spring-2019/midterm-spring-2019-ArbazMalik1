@@ -24,3 +24,10 @@ Point
 
 (Loop at least 20 times and create an assert in the loop.)
 */
+TEST_CASE("Test rolls")
+{
+	for (int i = 0; i < 20; i++)
+	{
+		REQUIRE(rolled_value() > 0 && rolled_value() <= 6);
+	}
+}

@@ -4,4 +4,19 @@ and values 1,2,3,4,5, and 6.
 
 public roll function returns a number from 1 to 6(search C++ random function)
 */
+#include "die.h"
+#include <cstdlib>
+
+	//The following function simulates a die roll
+
+	void Die::roll()
+	{
+		roll_value = rand() % sides + 1;
+	}
+
+	int Die::rolled_value() const 
+	{
+		return roll_value;
+	}
+
 
