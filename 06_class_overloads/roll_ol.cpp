@@ -1,11 +1,15 @@
 //class implementation
 //roll class implementation
 
-#include "roll.h";
+#include "roll_ol.h"
 
 Die dice;
 Roll rr;
 
+int Die::rolled_value() const
+{
+	return roll_value;
+}
 
 void Die::roll()
 {
@@ -15,11 +19,6 @@ void Die::roll()
 void Die::roll(Die& d1, Die& d2)
 {
 	roll_value = rand() % sides + 1;
-}
-
-int Die::rolled_value() const
-{
-	return roll_value;
 }
 
 void Roll::roll()

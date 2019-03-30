@@ -7,23 +7,22 @@
 Die dice;
 Roll rr;
 
-void Die::roll()
-{
-	roll_value = rand() % sides + 1;
-}
-
-int Die::rolled_value() const
-{
-	return roll_value;
-}
-
-
 void Roll::roll()
 {
 	dice.roll();
 	rr.die1_roll_value = dice.rolled_value();
 	rr.die2_roll_value = dice.rolled_value();
 	rr.rolled = true;
+}
+
+int value_1()
+{
+	return (rr.die1_roll_value);
+}
+int value_2()
+{
+	return (rr.die2_roll_value);
+
 }
 bool Roll::craps()
 {
@@ -101,12 +100,3 @@ string Roll::result()
 
 }
 
-int Roll::value_1()
-{
-	return (rr.die1_roll_value);
-}
-int Roll::value_2()
-{
-	return (rr.die2_roll_value);
-
-}

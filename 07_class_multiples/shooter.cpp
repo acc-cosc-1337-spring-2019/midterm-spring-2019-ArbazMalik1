@@ -1,14 +1,17 @@
 //class Shooter implementation
 #include "shooter.h"
 #include "roll.h"
+#include "die.h"
+
 
 Shooter shoot;
+Roll rr;
 
-void Shooter::shoot(Die& d1, Die& d2)
+Roll* Shooter::shoot(Die& d1, Die& d2)
 {
 	//create a Roll instance, call roll function, and return the instance 
-	Roll shooter;
-	return shooter.roll();
 	
-}
+	rr.roll();
+	return(rr);
 
+}

@@ -9,6 +9,7 @@ In another loop iterate the vector of Roll and dislplay the Roll result.
 */
 #include "roll_ol.h"
 #include "shooter.h"
+#include "die.h"
 #include <iostream>
 #include <vector>
 
@@ -35,6 +36,7 @@ int main()
 			for (int j = 0; j < rollVector[i].size(); j++)
 				cout << rollVector[i][j] << " ";
 		}
+		
 		cout << "Do you want to continue? (Y/N)";
 		cin >> userprompt;
 	} while (userprompt == 'y' || userprompt == 'Y');

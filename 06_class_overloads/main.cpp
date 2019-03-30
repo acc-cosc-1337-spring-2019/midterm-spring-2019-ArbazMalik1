@@ -7,9 +7,8 @@ output rolled values, and add to vector.
 Loop through vector of Roll and output roll result
 */
 
-#include "roll_ol.h";
+#include "roll_ol.h"
 #include <iostream>
-#include <vector>
 #include <vector>
 
 using namespace std;
@@ -17,12 +16,14 @@ int main()
 {
 	Die dice2;
 	Die dice1;
+	Roll roll;
+
 	vector<Roll> rollVector;
 
 
 	for (int i = 0; i < 20; i++)
 	{
-		Roll roll;
+		
 		int roll_value1;
 		int roll_value2;
 		roll.roll(&dice1, &dice2);

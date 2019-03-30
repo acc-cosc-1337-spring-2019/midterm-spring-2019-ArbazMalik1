@@ -1,11 +1,12 @@
 //class Shooter interface
 #include <iostream>
 #include <string>
+#include "die.h"
 
 using namespace std;
 
 class Shooter
 {
 public:
-	void shoot(Die& d1, Die& d2);
+	Roll* shoot(Die& d1, Die& d2);
 };

@@ -17,3 +17,19 @@ TEST_CASE("Test rolls")
 		REQUIRE(rolled_value() > 0 && rolled_value() <= 6);
 	}
 }
+
+TEST_CASE("Test rolls greater 0")
+{
+	for (int i = 0; i < 20; i++)
+	{
+		REQUIRE(rolled_value() > 0);
+	}
+}
+
+TEST_CASE("Test rolls less than 7")
+{
+	for (int i = 0; i < 20; i++)
+	{
+		REQUIRE(rolled_value() < 7);
+	}
+}

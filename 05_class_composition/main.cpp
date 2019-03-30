@@ -7,36 +7,35 @@ output rolled values, and add to vector.
 Loop through vector of Roll and output roll result
 */
 
-#include "roll.h";
+#include "roll.h"
 #include <iostream>
 #include <vector>
-#include <vector>
+
+
 
 using namespace std;
 int main()
 {
-	Die dice2;
 	Die dice1;
+	Die dice2;
+	int prompt;
 	vector<Roll> rollVector;
 	
 
 	for (int i = 0; i < 20; i++)
 	{
-		Roll roll;
-		int roll_value1;
-		int roll_value2;
-		roll.roll();
-		roll_value1 = dice1.rolled_value();
-		roll_value2 = dice2.rolled_value();
-		cout << "Dice roll: " << roll_value1 << " and " << roll_value2 << endl;
-		rollVector.push_back(roll_value1);
-		rollVector.push_back(roll_value2);
+		Roll rr;
+	
+		rr.roll();
+	
+		rollVector.push_back(rr.die1_roll_value);
+		rollVector.push_back(rr.die1_roll_value);
 	}
 
-	for (int i = 0; i < rollVector.size(); i++) {
-		for (int j = 0; j < rollVector[i].size(); j++)
-			cout << rollVector[i][j] << " ";
-	}
+//	for (int i = 0; i < rollVector.size(); i++) {
+		//for (int j = 0; j < rollVector[i].size(); j++)
+//			cout << rollVector[i][j] << " ";
+	//}
 
 	return 0;
 }

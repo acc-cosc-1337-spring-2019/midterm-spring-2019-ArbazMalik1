@@ -10,12 +10,14 @@ For each loop Roll die and display output
 #include <iostream>
 
 using namespace std;
-
+Die dice;
 int main()
 {
-	Die dice;
+	
 	char choice;
 	int roll_value;
+	cout << "TEST";
+	cin >> choice;
 
 	do
 	{
